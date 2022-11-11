@@ -1,0 +1,513 @@
+@import "normalize-scss.scss"
+@import "reset-scss.scss"
+
+@font-face
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+@font-face
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: 'MontserratT'
+    font-weight: regular
+
+$color-blue: #206AD6
+$color-grey: #CBCBCB
+$color-orange: #E36A3C
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+/* Первая секция */
+.main-section
+    position: relative
+    min-height: 800px
+    background: #E7E8E9
+    padding-top: 16px
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 66px
+        align-items: center
+    &__logo
+        width: 129px
+    &__content-container
+        position: relative
+        display: flex
+        flex-direction: row
+    &__first-elipse
+        position: absolute
+        top: 120px
+        right: 15px
+        z-index: 0
+    &__second-elipse
+        position: absolute
+        top: 630px
+        right: -100px
+        z-index: 0
+    &__third-elipse
+        position: absolute
+        top: 660px
+        right: 195px
+        z-index: 0
+    &__fouth-elipse
+        position: absolute
+        top: 547px
+        right: 210px
+        z-index: 0
+    &__fifth-elipse
+        position: absolute
+        top: 609px
+        right:336px
+        z-index: 0
+    &__sixth-elipse
+        position: absolute
+        top: 510px
+        right:360px
+        z-index: 0
+    &__seven-elipse
+        position: absolute
+        top: 385px
+        left: 64px
+        z-index: 0
+    &__eighth-elipse
+        position: absolute
+        top: 470px
+        left: 160px
+        z-index: 0
+    &__ninth-elipse
+        position: absolute
+        top: 483px
+        left: -50px 
+        z-index: 0   
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__item
+        margin-right: 40px
+        font-size: 20px
+        font-weight: bold
+        &:last-child
+            margin-right: 0
+        a
+            text-decoration: none
+            color: black
+
+.left-wrapper
+    position: relative
+    z-index: 1
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        position: absolute
+        transform: matrix(0.29, -0.95, 0.96, 0.28, 0, 0)
+        width: 641.49px
+        height: 227.06px
+        top: 150px
+        left: -50px
+        background: $color-blue
+        border-radius: 110px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        z-index: 2
+    &__rectangle-grey
+        position: absolute
+        transform: matrix(0.73, -0.67, 0.7, 0.73, 0, 0)
+        width: 646.18px
+        height: 225.43px
+        top: 200px
+        left: 45px
+        background: $color-grey
+        border-radius: 110px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        z-index: 1
+    &__rectangle-orange
+        position: absolute
+        transform: matrix(0.53, -0.84, 0.86, 0.52, 0, 0)
+        width: 665.8px
+        height: 226.36px
+        top: 165px
+        left: -5px
+        background: $color-orange
+        border-radius: 110px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        z-index: 3
+
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid black
+        border-radius: 100px
+        margin-right: 8.5px
+        &:last-child
+            margin-right: 0
+        i
+            font-size: 21px
+
+.right-wrapper
+    width: 360px
+    position: absolute
+    z-index: 1
+    top: 150px
+    right: 0px
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+    &__text
+        font-size: 16px
+        margin-bottom: 22px
+
+.title
+    font-size: 72px
+    font-weight: bold
+    position: relative
+    &__hr
+        width: 123px
+        position: absolute
+        margin: 0
+        border: none
+        border-top: 3px solid black
+
+.buttons
+    display: inline-flex
+    &__main-btn
+        margin-right: 41px
+        width: 183px
+        height: 52px
+        background: $color-orange
+        border: 0
+        border-radius: 100px
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        font-size: 18px
+        font-weight: bold
+        color: white
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+        img
+            margin-right: 11px
+    &__text
+        font-size: 16px
+/* Круги */
+.elipse
+    width: 205px
+    height: 205px
+    background: linear-gradient(144.51deg, rgba(227, 106, 60, 0.7) 24.09%, rgba(32, 106, 214, 0.7) 54.7%, rgba(0, 0, 0, 0.595) 81.59%)
+    border-radius: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_big
+        width: 217.34px
+        height: 217.34px
+        background: linear-gradient(200deg,  rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_big2
+        width: 184.38px
+        height: 184.38px
+        background: linear-gradient(320deg,  rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_small1
+        width: 72.38px
+        height: 72.38px
+        background: linear-gradient(110deg,  rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_small2
+        width: 59.98px
+        height: 59.98px
+        background: linear-gradient(220deg, rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_small3
+        width: 46.86px
+        height: 46.86px
+        background: linear-gradient(290deg, rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_small4
+        width: 34.68px
+        height: 34.68px
+        background: linear-gradient(80deg, rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_small5
+        width: 71.71px
+        height: 71.71px
+        background: linear-gradient(100deg, rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_small6
+        width: 55.68px
+        height: 55.68px
+        background: linear-gradient(270deg, rgba(227, 106, 60, 0.5) 24.09%, rgba(32, 106, 214, 0.5) 54.7%, rgba(0, 0, 0, 0.425) 81.59%)
+    &_2sec-first
+        width: 156.46px
+        height: 156.46px
+        background: linear-gradient(144.51deg, rgba(227, 106, 60, 0.6) 24.09%, rgba(32, 106, 214, 0.6) 54.7%, rgba(0, 0, 0, 0.51) 81.59%)
+    &_2sec-second
+        width: 156.47px
+        height: 156.47px
+        background: linear-gradient(144.51deg, rgba(227, 106, 60, 0.6) 24.09%, rgba(32, 106, 214, 0.6) 68.89%, rgba(0, 0, 0, 0.51) 81.59%)
+    &_2sec-third
+        width: 156.47px
+        height: 156.47px
+        background: linear-gradient(315.51deg, rgba(227, 106, 60, 0.6) 24.09%, rgba(32, 106, 214, 0.6) 68.89%, rgba(0, 0, 0, 0.51) 81.59%)
+    &_2sec-fourth
+        width: 156.47px
+        height: 156.47px
+        background: linear-gradient(164.51deg, rgba(227, 106, 60, 0.6) 24.09%, rgba(32, 106, 214, 0.6) 54.7%, rgba(0, 0, 0, 0.51) 81.59%)
+    &_sec3-first
+        width: 179px
+        height: 177.65px
+        background: linear-gradient(144.51deg, rgba(227, 106, 60, 0.6) 28.19%, rgba(32, 106, 214, 0.6) 59.93%, rgba(161, 168, 180, 0.6) 81.59%)
+    &_sec3-second
+        width: 237px
+        height: 235.21px
+        background: linear-gradient(144.51deg, rgba(227, 106, 60, 0.6) 28.19%, rgba(32, 106, 214, 0.6) 59.93%, rgba(161, 168, 180, 0.6) 81.59%)
+    &_sec3-third
+        width: 135px
+        height: 133.91px
+        background: linear-gradient(250.51deg, rgba(227, 106, 60, 0.6) 28.19%, rgba(32, 106, 214, 0.6) 59.93%, rgba(161, 168, 180, 0.6) 81.59%)
+    &_sec3-fourth
+        width: 102px
+        height: 101.23px
+        background: linear-gradient(70.51deg, rgba(227, 106, 60, 0.6) 28.19%, rgba(32, 106, 214, 0.6) 59.93%, rgba(161, 168, 180, 0.6) 81.59%)
+    &__subtract
+        width: 125px
+        height: 125px
+        background: #E7E8E9
+        border-radius: 300px
+        &_big
+            width: 137.53px
+            height: 137.53px
+        &_big2
+            width: 116.68px
+            height: 116.68px
+        &_small1
+            width: 45.8px
+            height: 45.8px
+        &_small2
+            width: 37.96px
+            height: 37.96px
+        &_small3
+            width: 29.6px
+            height: 29.6px
+        &_small4
+            width: 21.9px
+            height: 21.9px
+        &_small5
+            width: 45.38px
+            height: 45.38px
+        &_small6
+            width: 35.24px
+            height: 35.24px
+        &_2sec-first
+            width: 99.01px
+            height: 99.01px
+            background: #FFFFFF
+        &_sec3-first
+            width: 113.27px
+            height: 112.42px
+        &_sec3-second
+            width: 149.97px
+            height: 148.84px
+        &_sec3-third
+            width: 81.76px
+            height: 81.06px
+        &_sec3-fourth
+            width: 64.55px
+            height: 64.06px
+
+/* Вторая секция */
+.second-section
+    position: relative
+    min-height: 700px
+    background: #FFFFFF
+    overflow: hidden
+    &__title
+        margin-top: 37px
+        margin-bottom: 30px
+    &__guitars
+        display: flex
+        flex-direction: row
+        justify-content: center
+        /* display: inline-flex; margin-left: 150px */
+        margin-bottom: 35px
+    &__block1
+        background-color: rgba(227, 106, 60, 0.92)
+        display: flex
+        align-items: flex-end
+        position: relative
+        z-index: 5
+        &__text
+            position: absolute
+            top: 148px
+            right: 40px
+            font-weight: bold
+    &__block2
+        background-color: rgba(203, 203, 203, 0.92)
+        display: flex
+        align-items: flex-end
+        position: relative
+        z-index: 5
+        &__img
+            margin-left: 38px
+        &__text
+            position: absolute
+            top: 144px
+            right: -5px
+            font-weight: bold
+    &__block3
+        background-color: rgba(32, 106, 214, 0.92)
+        display: flex
+        align-items: flex-end
+        position: relative
+        z-index: 5
+        &__text
+            position: absolute
+            top: 160px
+            right: 40px
+            font-weight: bold
+    &__icons
+        display: flex
+        justify-content: space-evenly
+        position: relative
+        z-index: 5
+    &__content-container
+        position: relative
+    &__first-elipse
+        position: absolute
+        z-index: 1
+        top: 280px
+        left: -70px
+    &__second-elipse
+        position: absolute
+        z-index: 1
+        top: 60px
+        left: 325px
+    &__third-elipse
+        position: absolute
+        z-index: 1
+        top: 340px
+        left: 645px
+    &__fourth-elipse
+        position: absolute
+        z-index: 1
+        top: 20px
+        left: 1030px
+.title__hr_second
+    width: 150px
+.guitar-type
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+    width: 360px
+    height: 360px
+    border-radius: 10px
+    margin-right: 30px
+    &:last-child
+        margin-right: 0px
+    
+h2
+    font-size: 36px
+    text-align: center
+    transform: rotate(90deg)
+
+.icons-box
+    display: inline-flex
+    align-items: center
+    &__img
+        width: 80px
+        height: 80px
+        margin-right: 20px
+    &__text
+        font-size: 20px
+        span
+            font-size: 40px
+            font-weight: bold
+
+/* Третья секция */
+.third-section
+    position: relative
+    min-height: 700px
+    background: #E7E8E9
+    overflow: hidden
+    &__content-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-left: 94px
+        padding-top: 46px
+        position: relative
+    &__left-title
+        z-index: 4
+    &__right-title
+        margin-bottom: 17px
+    &__text
+        font-size: 18px
+        margin-bottom: 30px    
+    &__first-elipse
+        position: absolute
+        z-index: 2
+        top: 103px
+        left: 110px
+    &__polosatik
+        position: absolute
+        z-index: 3
+        top: 150px
+        left: -20px
+    &__second-elipse
+        position: absolute
+        z-index: 2
+        top: -65px
+        right: -67px
+    &__third-elipse
+        position: absolute
+        z-index: 2
+        top: 188px
+        right: 78px
+    &__fourth-elipse
+        position: absolute
+        z-index: 2
+        top: 83px
+        right: 211px
+
+.sec3-left-wrapper
+    max-width: 735px
+    z-index: 4
+
+.sec3-right-wrapper
+    max-width: 470px
+    z-index: 4
+
+.title__hr_third1
+    width: 150px
+.title__hr_third2
+    bottom: 70px
+    width: 114px
+
+.footer
+    position: relative
+    &__content-container
+        min-height: 314px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__img
+        position: absolute
+        left: -50px
+        bottom: 0px
+    &__title
+        margin-bottom: 28px
+
+.title__hr_footer
+    width: 132px
+    bottom: 70px
